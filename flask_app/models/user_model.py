@@ -75,6 +75,7 @@ class User:
 # THIS CHECKS THAT PASSWORD AND PASSWORD CONFIRMATION MATCH
         if (user['password'] != user['confirm_password']):
             flash("Passwords do not match!", "registration")
+            is_valid = False
         return is_valid
     
 
